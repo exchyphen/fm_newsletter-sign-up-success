@@ -1,0 +1,134 @@
+.signup-container {
+    width: 775px;
+    height: 500px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-container {
+    width: calc(100% - 310px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+h1 {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    height: 21px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background: url("../assets/images/icon-list.svg");
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    margin: 10px 0;
+}
+
+.email-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-label-container {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    color: var(--tomato);
+}
+
+.email {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--grey);
+}
+
+.email:focus {
+    outline: none;
+}
+
+.error-email-input {
+    border: 1px solid var(--tomato);
+    background: hsla(4, 100%, 67%, 0.2);
+    color: var(--tomato);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--grad1), var(--grad2));
+    box-shadow: 0 5px 10px 10px hsla(4, 100%, 67%, 0.2);
+}
+
+.hero-img {
+    width: 310px;
+    height: 100%;
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 775px) {
+    .signup-container {
+        width: 375px;
+        height: auto;
+        flex-direction: column-reverse;
+        font-size: 0.8rem;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .subscribe-container {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    li {
+        height: auto;
+        min-height: 21px;
+    }
+    .hero-img {
+        width: 100%;
+        height: 300px;
+        background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+        background-size: 100% auto;
+    }
+}
